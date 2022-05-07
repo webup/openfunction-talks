@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# VSCode cache
+.vscode
+.history
+
+# Netlify / Vercel
+.netlify
