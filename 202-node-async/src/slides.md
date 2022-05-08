@@ -33,7 +33,7 @@ Node.js Async Function Quickstart
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <a href="https://github.com/webup/openfunction-talks/202-node-async" target="_blank" alt="GitHub"
+  <a href="https://github.com/webup/openfunction-talks/tree/main/202-node-async" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
