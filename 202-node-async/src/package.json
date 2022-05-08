@@ -2,7 +2,7 @@
   "name": "202-node-async",
   "private": true,
   "scripts": {
-    "dev": "slidev --open",
+    "dev": "slidev",
     "build": "slidev build --base /2022/202-node-async/ --out ../../dist/2022/202-node-async",
     "export": "slidev export --dark --output ../202-node-async.pdf"
   },
