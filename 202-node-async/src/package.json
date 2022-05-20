@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base /2022/202-node-async/ --out ../../dist/2022/202-node-async",
-    "export": "slidev export --dark --output ../202-node-async.pdf"
+    "export": "slidev export --dark --with-clicks --output ../202-node-async.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^0.31.4",

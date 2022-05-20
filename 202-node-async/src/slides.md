@@ -54,6 +54,8 @@ Cloud Native focuses: Kubernetes, DevOps, Observability, Service Mesh, Serverles
 <div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4">
   <ri-github-line class="opacity-50"/>
   <div><a href="https://github.com/webup" target="_blank">webup</a></div>
+  <ri-twitter-line class="opacity-50"/>
+  <div><a href="https://twitter.com/zhanghaili0610" target="_blank">zhanghaili0610</a></div>
   <ri-mail-send-line class="opacity-50"/>
   <div><a href="mailto:haili.zhang@uisee.com" target="_blank">haili.zhang@uisee.com</a></div>
   <ri-article-line class="opacity-50"/>
