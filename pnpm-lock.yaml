@@ -7,12 +7,14 @@ importers:
       '@iconify/json': ^2.1.38
       '@slidev/cli': ^0.31.2
       '@slidev/theme-default': ^0.21.2
+      playwright-chromium: ^1.22.1
       pnpm: ^7.0.0
       rimraf: ^3.0.2
     devDependencies:
       '@iconify/json': 2.1.38
-      '@slidev/cli': 0.31.2
+      '@slidev/cli': 0.31.2_playwright-chromium@1.22.1
       '@slidev/theme-default': 0.21.2
+      playwright-chromium: 1.22.1
       pnpm: 7.0.0
       rimraf: 3.0.2
 
@@ -124,7 +126,7 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.1
 
-  /@slidev/cli/0.31.2:
+  /@slidev/cli/0.31.2_playwright-chromium@1.22.1:
     resolution: {integrity: sha512-5mOZ0yyz0BiifjHxjxsN63g9As+9MYow7VWziqiajRvkmpn4CV98oQMo+Gyeqs2ap0MLGNnrdpG3ov2Q5o1pxQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -162,6 +164,7 @@ packages:
       nanoid: 3.3.4
       open: 8.4.0
       plantuml-encoder: 1.4.0
+      playwright-chromium: 1.22.1
       prismjs: 1.28.0
       prompts: 2.4.2
       resolve: 1.22.0
@@ -2517,6 +2520,21 @@ packages:
 
   /plantuml-encoder/1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
+
+  /playwright-chromium/1.22.1:
+    resolution: {integrity: sha512-bvrSyGOOWZeCM/fKScWuNR+DABHjCCNhNL3H9Rpfa7tp0UOG5XuyQ0ZQ3N5eJMxCpw369FkuJuUVdFeEMkmpdw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      playwright-core: 1.22.1
+    dev: true
+
+  /playwright-core/1.22.1:
+    resolution: {integrity: sha512-H+ZUVYnceWNXrRf3oxTEKAr81QzFsCKu5Fp//fEjQvqgKkfA1iX3E9DBrPJpPNOrgVzcE+IqeI0fDmYJe6Ynnw==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /plist/3.0.5:
     resolution: {integrity: sha512-83vX4eYdQp3vP9SxuYgEM/G/pJQqLUz/V/xzPrzruLs7fz7jxGQ1msZ/mg1nwZxUSuOp4sb+/bEIbRrbzZRxDA==}
