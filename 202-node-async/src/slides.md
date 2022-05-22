@@ -1,4 +1,5 @@
 ---
+download: 'https://github.com/webup/openfunction-talks/raw/main/202-node-async/202-node-async.pdf'
 # try also 'default' to start with a default theme
 # theme: seriph
 # random image from a curated Unsplash collection by Anthony
@@ -36,6 +37,10 @@ Node.js Async Function Quickstart
   <a href="https://github.com/webup/openfunction-talks/tree/main/202-node-async" target="_blank" alt="GitHub"
     class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
+  </a>
+  <a href="https://github.com/webup/openfunction-talks/raw/main/202-node-async/202-node-async.pdf" target="_blank" alt="GitHub"
+    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-download />
   </a>
 </div>
 
