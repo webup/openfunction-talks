@@ -5,11 +5,11 @@
     "export": "pnpm -r run export"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.47",
-    "@slidev/cli": "^0.32.1",
+    "@iconify/json": "^2.1.49",
+    "@slidev/cli": "^0.32.3",
     "@slidev/theme-default": "^0.21.2",
     "playwright-chromium": "^1.22.1",
-    "pnpm": "^7.1.3",
+    "pnpm": "^7.1.5",
     "rimraf": "^3.0.2"
   }
 }
