@@ -13,6 +13,12 @@
   status = 200
 
 [[redirects]]
+  from = "/2022/203-node-mixed/*"
+  to = "/2022/203-node-mixed/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
-  to = "https://www.yuque.com/serviceup"
+  to = "https://openfunction.dev"
   status = 302
+  force = true

@@ -1,0 +1,23 @@
+.footnotes-sep {
+  @apply mt-20 opacity-10;
+}
+
+.footnotes {
+  @apply text-sm opacity-75;
+}
+
+.footnotes p {
+  @apply my-1;
+}
+
+.footnote-backref {
+  display: none;
+}
+
+.slidev-code {
+  @apply w-95/100;
+}
+
+blockquote {
+  @apply w-95/100;
+}
