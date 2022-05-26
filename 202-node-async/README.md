@@ -1,11 +1,12 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Node.js Async Function Quickstart
 
-To start the slide show:
+- Prerequsites
+- Your First Async Function
+  - A sample async function
+  - Build Function Image via Pack Optional
+- Lab: MQTT Forwarder
+  - Set up MQTT Broker Optional
+  - Lab 1: MQTT Input and Output Binding
+  - Lab 2: MQTT Pub and Sub
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
+> The slide is powered by [Slidev](https://sli.dev/).

@@ -1,4 +1,5 @@
 ---
+hideInToc: true
 download: 'https://github.com/webup/openfunction-talks/raw/main/202-node-async/202-node-async.pdf'
 # try also 'default' to start with a default theme
 # theme: seriph
@@ -15,7 +16,7 @@ lineNumbers: false
 info: |
   ## OpenFunction Tutorials
   
-  Hands-on tutorial on Node.js Function Framework
+  Hands-on tutorial on Node.js Functions Framework
 
   Learn more at [OpenFunction](https://openfunction.dev/)
 # persist drawings in exports and build
@@ -45,6 +46,7 @@ Node.js Async Function Quickstart
 </div>
 
 ---
+hideInToc: true
 layout: intro
 ---
 
@@ -70,6 +72,14 @@ Cloud Native focuses: Kubernetes, DevOps, Observability, Service Mesh, Serverles
 <img src="https://s2.loli.net/2022/05/08/XRTdnohGA9rlewu.png" class="rounded-full w-40 abs-tr mt-16 mr-12"/>
 
 ---
+hideInToc: true
+---
+
+# Table of Content
+
+<Toc listClass="!list-disc" maxDepth="2" />
+
+---
 
 # Prerequsites
 
@@ -92,6 +102,7 @@ $ ofn install --async --shipwright
 [^3]: Please refer <Link to="7" title="this" /> to learn how to build function image at local
 
 ---
+hideInToc: true
 layout: center
 class: text-center
 ---
@@ -101,10 +112,12 @@ class: text-center
 A brief walkthrough
 
 ---
+title: Your First Async Function
+---
 
 <div class="grid grid-cols-2 gap-x-8"><div>
 
-# Async 
+# Async <MarkerVersion version="0.4.1+" />
 
 ```js
 function (ctx, data) {}
@@ -151,8 +164,11 @@ function (req, res) {}
 </div></div>
 
 ---
+title: A sample async function
+level: 2
+---
 
-# A sample `foward` function
+# A sample function: `tryAsync`
 
 <div class="grid grid-cols-2 gap-x-4">
 
@@ -164,7 +180,7 @@ function (req, res) {}
 
 ```js
 // Async function
-export const forward = (ctx, data) => {
+export const tryAsync = (ctx, data) => {
   console.log('Data received: %o', data);
   ctx.send(data);
 };
@@ -212,6 +228,9 @@ export const tryKnative = (req, res) => {
 </div>
 
 ---
+title: Build Function Image via Pack <MarkerOptional />
+level: 2
+---
 
 # Build Function Image via Pack <MarkerOptional />
 
@@ -243,8 +262,11 @@ class: text-center
 
 # <icomoon-free-lab class="opacity-70"/> Lab: [MQTT](https://www.emqx.com/en/mqtt) Forwarder
 
-Use `forwarder` async function to bridge MQTT topic channels
+Use async function to bridge MQTT messages among topic channels
 
+---
+title: Set up MQTT Broker <MarkerOptional />
+level: 2
 ---
 
 # Set up MQTT Broker <MarkerOptional />
@@ -276,6 +298,7 @@ In this lab, we will use [EMQX](https://www.emqx.io/) as the broker infrastructu
 
 
 ---
+hideInToc: true
 layout: image
 image: images/emqx-dashboard.png
 class: text-center
@@ -284,6 +307,8 @@ class: text-center
 ###### EQMX Dashboard Screenshot
 
 ---
+title: "Lab 1: MQTT Input and Output Binding"
+level: 2
 layout: two-cols
 ---
 
@@ -358,6 +383,9 @@ spec:
 </style>
 
 ---
+title: Deploy Function 
+level: 3
+---
 
 # Lab 1: MQTT Input and Output Binding
 
@@ -388,6 +416,8 @@ spec:
   ```
 
 ---
+title: Trigger Event
+level: 3
 layout: image-right
 image: images/mqttx-in-out.png
 ---
@@ -412,6 +442,8 @@ See also: [MQTT X](https://mqttx.app/) desktop client
   ```
 
 ---
+title: "Lab 2: MQTT Pub and Sub"
+level: 2
 layout: two-cols
 ---
 
@@ -476,6 +508,9 @@ spec:
 </style>
 
 ---
+title: Deploy Function
+level: 3
+---
 
 # Lab 2: MQTT Pub and Sub
 
@@ -507,6 +542,8 @@ spec:
   ```
 
 ---
+title: Trigger Event
+level: 3
 layout: image-right
 image: images/mqttx-pub-sub.png
 ---
@@ -531,10 +568,15 @@ image: images/mqttx-pub-sub.png
   ```
 
 ---
+hideInToc: true
 layout: center
 class: text-center
 ---
 
 # <uim-rocket class="text-3xl"/> Learn More
 
-[OpenFunction](https://openfunction.dev/) · [Node.js Function Framework](https://github.com/OpenFunction/functions-framework-nodejs)
+<bi-discord /> [Discord](https://discord.gg/awpAh8W5xW) · <bi-slack /> [Slack](https://cloud-native.slack.com/archives/C03ETDMD3LZ)
+
+<br>
+
+[OpenFunction](https://openfunction.dev/) · [Node.js Functions Framework](https://github.com/OpenFunction/functions-framework-nodejs)
