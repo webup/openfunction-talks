@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2022/202-node-async/ --out ../../dist/2022/203-node-mixed",
+    "build": "slidev build --base /2022/203-node-mixed/ --out ../../dist/2022/203-node-mixed",
     "export": "slidev export --dark --with-clicks --output ../203-node-mixed.pdf"
   },
   "dependencies": {
