@@ -81,8 +81,8 @@ hideInToc: true
 
 ---
 title: Tricky Part of Async Function
-layout: image-right
-image: images/use-case-async.png
+layout: iframe-right
+url: https://embeds.onemodel.app/d/iframe/aiOvN37uC1OEIrKh6yGADkuuyLPuaGFG4bc4OTl6TrL3h10zvCt2MbG020YB
 ---
 
 ## Tricky Part of Async Func
@@ -108,8 +108,8 @@ image: images/use-case-async.png
 
 ---
 title: HTTP Comes to the Rescue
-layout: image-right
-image: images/use-case-async-http.png
+layout: iframe-right
+url: https://embeds.onemodel.app/d/iframe/QDvoHGiYvG9o2SjZB7bP0VJ63fT2UfM4ovw7jhWX2VA2rSwgUJ4MuwKA2TRQ
 ---
 
 ## HTTP Comes to the Rescue
