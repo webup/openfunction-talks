@@ -53,7 +53,7 @@ layout: intro
 # Haili Zhang
 
 <div class="leading-8 opacity-80">
-KubeSphere Ambassador, CNCF OpenFunction Maintainer.<br>
+KubeSphere Ambassador, CNCF OpenFunction TOC Member.<br>
 Cloud Platform Director of UISEE&copy; Technology.<br>
 Cloud Native focuses: Kubernetes, DevOps, Observability, Service Mesh, Serverless.<br>
 </div>
