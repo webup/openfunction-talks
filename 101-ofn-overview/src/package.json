@@ -1,0 +1,13 @@
+{
+  "name": "101-ofn-overview",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2022/101-ofn-overview/ --out ../../dist/2022/101-ofn-overview"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.33.0",
+    "@slidev/theme-default": "*",
+    "slidev-theme-light-icons": "^1.0.2"
+  }
+}

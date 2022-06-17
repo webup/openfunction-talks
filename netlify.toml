@@ -8,6 +8,11 @@
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
 
 [[redirects]]
+  from = "/2022/101-ofn-overview/*"
+  to = "/2022/101-ofn-overview/index.html"
+  status = 200
+
+[[redirects]]
   from = "/2022/202-node-async/*"
   to = "/2022/202-node-async/index.html"
   status = 200
