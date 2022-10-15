@@ -3,7 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2022/101-ofn-overview/ --out ../../dist/2022/101-ofn-overview"
+    "build": "slidev build --base /2022/101-ofn-overview/ --out ../../dist/2022/101-ofn-overview",
+    "export": "slidev export --dark --timeout 0 --output ../101-ofn-overview.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^0.33.0",

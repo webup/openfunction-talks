@@ -234,7 +234,7 @@ Check out full content in [http-trigger.yml](https://github.com/OpenFunction/sam
 
 ```yaml{4-7|8-}
 spec:
-  image: '<image-repo>/<image-name>/<image-tag>'
+  image: '<image-repo>/<image-name>:<image-tag>'
   serving:
     runtime: knative
     params:
@@ -312,15 +312,5 @@ Send request to domain ingress.
 [^1]: See also: OpenFunction 202 - [Set up MQTT Broker](https://openfunction-talks.netlify.app/2022/202-node-async/9)
 
 ---
-layout: center
-class: text-center
-hideInToc: true
+src: ../../pages/end.md
 ---
-
-# <uim-rocket class="text-3xl"/> Learn More
-
-<bi-discord /> [Discord](https://discord.gg/awpAh8W5xW) · <bi-slack /> [Slack](https://cloud-native.slack.com/archives/C03ETDMD3LZ)
-
-<br>
-
-[OpenFunction](https://openfunction.dev/) · [Node.js Functions Framework](https://github.com/OpenFunction/functions-framework-nodejs)

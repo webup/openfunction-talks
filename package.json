@@ -2,14 +2,16 @@
   "private": true,
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
-    "export": "pnpm -r run export"
+    "export": "pnpm -r run export",
+    "serve": "netlify dev"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.61",
-    "@slidev/cli": "^0.33.0",
+    "@iconify/json": "^2.1.121",
+    "@slidev/cli": "^0.36.6",
     "@slidev/theme-default": "^0.21.2",
-    "playwright-chromium": "^1.22.2",
-    "pnpm": "^7.2.1",
+    "netlify-cli": "^12.0.7",
+    "playwright-chromium": "^1.27.0",
+    "pnpm": "^7.13.4",
     "rimraf": "^3.0.2"
   }
 }

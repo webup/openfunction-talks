@@ -1,6 +1,6 @@
 # Node.js Async Function Quickstart
 
-- Prerequsites
+- Prerequisites
 - Your First Async Function
   - A sample async function
   - Build Function Image via Pack Optional
