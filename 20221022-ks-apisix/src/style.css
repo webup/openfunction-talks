@@ -1,0 +1,7 @@
+.slidev-code {
+  @apply w-95/100;
+}
+
+blockquote {
+  @apply w-95/100 text-xs;
+}
