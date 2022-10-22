@@ -109,3 +109,6 @@ dist
 
 # Netlify / Vercel
 .netlify
+
+# Slidev build
+components.d.ts
