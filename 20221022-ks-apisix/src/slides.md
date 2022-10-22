@@ -57,6 +57,8 @@ KubeSphere Ambassador, CNCF OpenFunction TOC Member<br>
 </div>
 
 <div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4">
+  <ri-wechat-line class="opacity-50"/>
+  <div><a href="https://s2.loli.net/2022/10/22/wjYvKo4EWagbJ9L.jpg" target="_blank">zhanghaili</a></div>
   <ri-github-line class="opacity-50"/>
   <div><a href="https://github.com/webup" target="_blank">webup</a></div>
   <ri-twitter-line class="opacity-50"/>
@@ -202,6 +204,8 @@ layout: section
 
 # 举几个函数的例子 🌰
 
+OpenFunction 现已支持 Go, Node.js, Python, Java, .Net 等[多种语言](https://openfunction.dev/docs/getting-started/quickstarts/)
+
 ---
 layout: two-cols-header
 ---
@@ -241,7 +245,7 @@ export const tryKnative = (req, res) => {
 
 ###### Function CR (Raw Manifest)
 
-```yaml {7-}
+```yaml {7-|8-15|16-17|18-}
 apiVersion: core.openfunction.io/v1beta1
 kind: Function
 metadata:
@@ -249,6 +253,16 @@ metadata:
 spec:
   version: v2.0.0
   image: '<image-repo>/<image-name>:<image-tag>'
+  build:
+    builder: openfunction/builder-node:v2-16.15
+    env:
+      FUNC_NAME: tryKnative
+    srcRepo:
+      url: https://github.com/OpenFunction/samples.git
+      sourceSubPath: functions/async/mqtt-io-node
+      revision: main
+  # app port default to "8080"
+  port: 8080
   serving:
     runtime: knative
     template:
@@ -384,7 +398,7 @@ export const tryKnativeAsync = async (ctx, data) => {
 };
 ```
 
-> 💡 [OpenFunction 函数形态](https://openfunction.dev/docs/concepts/function_signatures/) 可以同时支持同步和异步函数
+> 💡 [`openfunction` 函数形态](https://openfunction.dev/docs/concepts/function_signatures/) 可以同时支持同步和异步函数
 
 ::right::
 
