@@ -95,7 +95,6 @@ layout: iframe-right
 url: https://openfunction.dev/
 ---
 
-
 # Open? Function！ ☁️
 
 一个 [CNCF Sandbox](https://www.cncf.io/projects/openfunction/) 函数计算平台项目
@@ -156,37 +155,13 @@ Cloud Agnostic —— 与云商的 BaaS 解耦
 </style>
 
 ---
-hideInToc: true
-layout: image
-image: https://www.cncf.io/wp-content/uploads/2022/02/p9_Repor-01-10-1.svg
+src: ../../pages/zh/serverless-wars.md
 class: bg-slate-50 bg-origin-content
 ---
 
-# Serverless 平台的战争?
-
-[CNCF Annual Survey 2021](https://www.cncf.io/reports/cncf-annual-survey-2021/)
-
-"使用 Serverless 技术的受访者，75% 选择了托管平台"
-
-<style>
-h1,p {
-  @apply !text-red-500;
-}
-</style>
-
 ---
-hideInToc: true
-layout: iframe-right
-url: https://embeds.onemodel.app/d/iframe/mOmUABwfsD0d6cgwGRyzt8vih5uoeXldJO4hyWdUUAjl2g7YeWeQf44kkQxh
+src: ../../pages/zh/dapr-intro.md
 ---
-
-# 破局之道 🎩
-
-借助 [Dapr](https://dapr.io/) 来集成各云商平台的 BaaS 服务
-
-![Dapr Building Blocks](https://docs.dapr.io/images/overview.png)
-
-> Dapr provides you with APIs that abstract away the complexity of common challenges developers encounter regularly when building distributed applications. These API building blocks can be leveraged as the need arises - use one, several or all to develop your application faster and deliver your solution on time.
 
 ---
 layout: image
@@ -207,166 +182,12 @@ layout: section
 OpenFunction 现已支持 Go, Node.js, Python, Java, .Net 等[多种语言](https://openfunction.dev/docs/getting-started/quickstarts/)
 
 ---
-layout: two-cols-header
+src: ../../pages/zh/code-node-sync.md
 ---
 
-# 一个 Node.js 同步函数
-
-::left::
-
-###### index.mjs
-
-```js
-// Standard Express style HTTP sync function
-export const tryKnative = (req, res) => {
-  res.send(`Hello, ${req.query.u || 'World'}!`);
-};
-```
-
-> 🔍 参见 Express 的 [request](https://devdocs.io/express-request/) 和 [response](https://devdocs.io/express-response/) 对象的使用
-
-<br>
-
-###### package.json
-
-```json {4,7}
-{
-  "main": "index.mjs",
-  "scripts": {
-    "start": "functions-framework --target=tryKnative"
-  },
-  "dependencies": {
-    "@openfunction/functions-framework": "^0.6.0"
-  }
-}
-```
-
-::right::
-
-###### Function CR (Raw Manifest)
-
-```yaml {7-|8-15|16-17|18-}
-apiVersion: core.openfunction.io/v1beta1
-kind: Function
-metadata:
-  name: sample-node-knative
-spec:
-  version: v2.0.0
-  image: '<image-repo>/<image-name>:<image-tag>'
-  build:
-    builder: openfunction/builder-node:v2-16.15
-    env:
-      FUNC_NAME: tryKnative
-    srcRepo:
-      url: https://github.com/OpenFunction/samples.git
-      sourceSubPath: functions/async/mqtt-io-node
-      revision: main
-  # app port default to "8080"
-  port: 8080
-  serving:
-    runtime: knative
-    template:
-      containers:
-        - name: function
-          imagePullPolicy: IfNotPresent
-    params:
-      FUNCTION_TARGET: tryKnative
-      DEBUG: common:*,ofn:*
-```
-
-> 🔍 参见 OpenFunction [Function CRD](https://openfunction.dev/docs/reference/component-reference/function-spec/) 定义
-
 ---
-layout: two-cols-header
+src: ../../pages/zh/code-node-async.md
 ---
-
-# 一个 Node.js 异步函数
-
-::left::
-
-###### index.mjs
-
-```js {6-}
-// Standard Express style HTTP sync function
-export const tryKnative = (req, res) => {
-  res.send(`Hello, ${req.query.u || 'World'}!`);
-};
-
-// Async function
-export const tryAsync = (ctx, data) => {
-  console.log('Data received: %o', data);
-  ctx.send(data);
-};
-```
-
-> 💡 多个函数可以被放在同一个 JS 文件中，并在 CR 中动态指定
-
-<br>
-
-###### package.json
-
-```json {4}
-{
-  "main": "index.mjs",
-  "dependencies": {
-    "@openfunction/functions-framework": "^0.6.0"
-  }
-}
-```
-
-::right::
-
-###### Function CR (Raw Manifest)
-
-```yaml {all|9-10|11-13|17-19|20-26|27-} {maxHeight:'400px'}
-apiVersion: core.openfunction.io/v1beta1
-kind: Function
-metadata:
-  name: sample-node-async
-spec:
-  version: v2.0.0
-  image: '<image-repo>/<image-name>:<tag>'
-  serving:
-    # default to knative
-    runtime: async
-    annotations:
-      # default to "grpc"
-      dapr.io/app-protocol: http
-    template:
-      containers:
-        - name: function
-    params:
-      # default to FUNC_NAME value
-      FUNCTION_TARGET: tryAsync
-    inputs:
-      - name: mqtt-input
-        component: mqtt-in
-    outputs:
-      - name: mqtt-output
-        component: mqtt-out
-        operation: create
-    bindings:
-      mqtt-in:
-        type: bindings.mqtt
-        version: v1
-        metadata:
-          - name: consumerID
-            value: '{uuid}'
-          - name: url
-            value: tcp://admin:public@emqx:1883
-          - name: topic
-            value: in
-      mqtt-out:
-        type: bindings.mqtt
-        version: v1
-        metadata:
-          - name: consumerID
-            value: '{uuid}'
-          - name: url
-            value: tcp://admin:public@emqx:1883
-          - name: topic
-            value: out
-```
 
 ---
 layout: two-cols-header
@@ -404,7 +225,7 @@ export const tryKnativeAsync = async (ctx, data) => {
 
 ###### Function CR (Raw Manifest)
 
-```yaml {9,12|13-} {maxHeight:'360px'}
+```yaml {9,12|13-} {maxHeight:'300px'}
 apiVersion: core.openfunction.io/v1beta1
 kind: Function
 metadata:
@@ -433,6 +254,8 @@ spec:
           - name: topic
             value: out
 ```
+
+> 💡 此场景中 Function CRD 只生效 `outputs` 输出部分
 
 ---
 layout: center
