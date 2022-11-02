@@ -28,6 +28,11 @@
   status = 200
 
 [[redirects]]
+  from = "/2022/20221104/*"
+  to = "/2022/20221104/index.html"
+  status = 200
+
+[[redirects]]
   from = "/"
   to = "https://openfunction.dev"
   status = 302
