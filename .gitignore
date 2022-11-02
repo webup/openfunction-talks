@@ -112,3 +112,4 @@ dist
 
 # Slidev build
 components.d.ts
+index.html
