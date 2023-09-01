@@ -5,7 +5,7 @@
 
 [build]
   publish = "dist"
-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+  command = "npm run build"
 
 [[redirects]]
   from = "/2022/101-ofn-overview/*"
@@ -25,11 +25,6 @@
 [[redirects]]
   from = "/2022/20221022/*"
   to = "/2022/20221022/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/2022/20221104/*"
-  to = "/2022/20221104/index.html"
   status = 200
 
 [[redirects]]
