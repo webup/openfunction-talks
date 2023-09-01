@@ -7,7 +7,7 @@
     "export": "slidev export --dark --timeout 0 --output ../101-ofn-overview.pdf"
   },
   "dependencies": {
-    "@slidev/cli": "^0.33.0",
+    "@slidev/cli": "^0.43.0-beta.3",
     "@slidev/theme-default": "*",
     "slidev-theme-light-icons": "^1.0.2"
   }
