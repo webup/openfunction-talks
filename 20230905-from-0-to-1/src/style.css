@@ -13,3 +13,8 @@
 .footnote-backref {
   display: none;
 }
+
+.inline-elements {
+  display: flex;
+  align-items: center;
+}

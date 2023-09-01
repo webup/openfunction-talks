@@ -58,15 +58,24 @@ DSCL(Distributed Storage and Computing Lab)<br>
 </div>
 
 <div class="my-10 grid grid-cols-[40px,1fr] w-min gap-y-4">
-  <ri-github-line class="opacity-50"/>
+  <div class="inline-elements">
+  <ri-github-line class="opacity-50"/>&#20&#20
   <div><a href="https://github.com/yi-ge-dian" target="_blank">yi-ge-dian</a></div>
-  <ri-mail-send-line class="opacity-50"/>
+  </div>
+  
+  <div class="inline-elements">
+  <ri-mail-send-line class="opacity-50"/>&#20&#20
   <div><a href="mailto:haili.zhang@uisee.com" target="_blank">wenldong666@gmail.com</a></div>
-  <ri-article-line class="opacity-50"/>
-  <div><a href="https://onepoint.link" target="_blank">onepoint</a></div>
-</div>
+  </div>
 
-<img src="https://s2.loli.net/2023/09/01/HVyZwu8hFNEWmvS.jpg" class="rounded-full w-40 abs-tr mt-16 mr-12"/>
+  <div class="inline-elements">
+  <ri-article-line class="opacity-50"/>&#20&#20
+  <div><a href="https://onepoint.link" target="_blank">onepoint</a></div>
+  </div>
+<img src="https://s2.loli.net/2023/09/01/HVyZwu8hFNEWmvS.jpg" class="rounded-full w-40 abs-tr 
+mt-16 mr-12"/>
+
+</div>
 
 ---
 hideInToc: true
@@ -137,16 +146,11 @@ level: 2
 ---
 
 <br>
-<br>
-<br>
-<br>
 
 ## 在项目开始前做了什么
 
 ###### 好多新东西，不停的学习😴
 
-<br>
-<br>
 
 * Node.js Learning
 * TypeScript Learning
@@ -174,6 +178,8 @@ level: 2
 ---
 
 ## 在开发过程中做了什么
+
+<br>
 
 ###### 摸清项目的整体架构，快速开发💪
 
@@ -280,6 +286,8 @@ layout: quote
 ---
 
 # 最后😭
+
+<br>
 
 1. 非常感谢  <b class="text-amber-500">KubeSphere</b> 社区能够提供这次机会，让我们高校的学生参与到项目中去，收获匪浅。
 
