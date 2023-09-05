@@ -1,0 +1,14 @@
+{
+    "name": "20230905-from-0-to-1",
+    "private": true,
+    "scripts": {
+        "dev": "slidev",
+        "build": "slidev build --base /2023/20230905/ --out ../../dist/2023/20230905",
+        "export": "slidev export --dark --timeout 0 --output ../20230905-from-0-to-1.pdf"
+    },
+    "dependencies": {
+        "@slidev/cli": "0.43.0-beta.3",
+        "@slidev/theme-default": "*",
+        "@slidev/theme-seriph": "*"
+    }
+}
