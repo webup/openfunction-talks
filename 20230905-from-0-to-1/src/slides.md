@@ -206,20 +206,24 @@ class: text-center
 level: 2
 ---
 
-## A sample function: `tryKnativeAsyncStateSave`
+## Save and Get
 
 <div>
 
 ###### index.mjs
 
-```js {all|3}
+```js {all|4|9}
 // Async function state save
 async function tryKnativeAsyncStateSave(ctx, data) {
   console.log('✅ Function receive request: %o', data);
   await ctx.state.save(data);
 }
+// Async function state get
+async function tryKnativeAsyncStateGet(ctx, data) {
+  console.log('✅ Function receive request: %o', data);
+  await ctx.state.get(data);
+}
 ```
-<br>
 
 </div>
 
@@ -227,11 +231,12 @@ async function tryKnativeAsyncStateSave(ctx, data) {
 
 ###### package.json
 
-```json{all|4}
+```json{all|4|5}
 {
   "main": "index.mjs",
   "scripts": {
-    "start": "functions-framework --target=tryKnativeAsyncStateSave --signature=openfunction"
+    "save": "functions-framework --target=tryKnativeAsyncStateSave --signature=openfunction",
+    "get": "functions-framework --target=tryKnativeAsyncStateGet --signature=openfunction",
   },
   "dependencies": {
     "@openfunction/functions-framework": "^0.6.1"
@@ -249,6 +254,110 @@ async function tryKnativeAsyncStateSave(ctx, data) {
 }
 </style>
 
+
+---
+level: 2
+---
+
+## GetBulk and Delete
+
+<div>
+
+###### index.mjs
+
+```js {all|4|9}
+// Async function state getBulk
+async function tryKnativeAsyncStateGetBulk(ctx, data) {
+  console.log('✅ Function receive request: %o', data);
+  await ctx.state.getBulk(data);
+}
+// Async function state delete
+async function tryKnativeAsyncStateDelete(ctx, data) {
+  console.log('✅ Function receive request: %o', data);
+  await ctx.state.delete(data);
+}
+```
+
+</div>
+
+<div>
+
+###### package.json
+
+```json{all|4|5}
+{
+  "main": "index.mjs",
+  "scripts": {
+    "save": "functions-framework --target=tryKnativeAsyncStateGetBulk --signature=openfunction",
+    "get": "functions-framework --target=tryKnativeAsyncStateDelete --signature=openfunction",
+  },
+  "dependencies": {
+    "@openfunction/functions-framework": "^0.6.1"
+  }
+}
+```
+</div>
+<v-click>
+
+</v-click>
+
+<style>
+.slidev-code {
+  @apply !rounded-none;
+}
+</style>
+
+---
+level: 2
+---
+
+## Query and Transaction
+
+<div>
+
+###### index.mjs
+
+```js {all|4|9}
+// Async function state query
+async function tryKnativeAsyncStateQuery(ctx, data) {
+  console.log('✅ Function receive request: %o', data);
+  await ctx.state.query(data);
+}
+// Async function state transaction
+async function tryKnativeAsyncStateTransaction(ctx, data) {
+  console.log('✅ Function receive request: %o', data);
+  await ctx.state.transaction(data);
+}
+```
+
+</div>
+
+<div>
+
+###### package.json
+
+```json{all|4|5}
+{
+  "main": "index.mjs",
+  "scripts": {
+    "save": "functions-framework --target=tryKnativeAsyncStateQuery --signature=openfunction",
+    "get": "functions-framework --target=tryKnativeAsyncStateTransaction --signature=openfunction",
+  },
+  "dependencies": {
+    "@openfunction/functions-framework": "^0.6.1"
+  }
+}
+```
+</div>
+<v-click>
+
+</v-click>
+
+<style>
+.slidev-code {
+  @apply !rounded-none;
+}
+</style>
 
 ---
 layout: center
@@ -275,7 +384,7 @@ level: 2
 
 3. 一些好用的东西
 
-- [开源最佳实践](https://linuxsuren.github.io/open-source-best-practice/)
+- [开源最佳实践](https://linuxsuren.github.io/open-source-best-practice/)，如何做好开源。
 - [k9s](https://k9scli.io/), 能够非常方便的监视 k8s 集群。
 - [termius](https://termius.com/), 快速连接到集群，可以自定义一些脚本，方便的👊执行重复性命令，支持文件上传等功能。
 - [nocalhost](https://nocalhost.dev/), 一个云原生的开发工具
