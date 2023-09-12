@@ -7,7 +7,7 @@
     "export": "slidev export --dark --with-clicks --output ../203-node-mixed.pdf"
   },
   "dependencies": {
-    "@slidev/cli": "^0.33.0",
+    "@slidev/cli": "^0.43.2",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   }

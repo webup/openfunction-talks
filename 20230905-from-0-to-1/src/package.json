@@ -7,7 +7,7 @@
         "export": "slidev export --dark --timeout 0 --output ../20230905-from-0-to-1.pdf"
     },
     "dependencies": {
-        "@slidev/cli": "0.43.0-beta.3",
+        "@slidev/cli": "0.43.2",
         "@slidev/theme-default": "*",
         "@slidev/theme-seriph": "*"
     }
