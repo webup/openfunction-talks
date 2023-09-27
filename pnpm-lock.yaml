@@ -27,8 +27,8 @@ importers:
         specifier: ^8.7.1
         version: 8.7.1
       rimraf:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.5
+        version: 5.0.5
       vue:
         specifier: ^3.3.0
         version: 3.3.4
@@ -2663,45 +2663,6 @@ packages:
       - vite
     dev: false
 
-  /@slidev/client@0.36.6(vite@2.9.16):
-    resolution: {integrity: sha512-pd2zLNChXHAmweHhzDDSLyQA6Cr+szMEz/Tu1d+wn3FQ8mIclvNykXjPk5Z20Eyae98IadNyY8xIOxjB9RbGWg==}
-    engines: {node: '>=14.0.0'}
-    dependencies:
-      '@antfu/utils': 0.5.2
-      '@slidev/parser': 0.36.6
-      '@slidev/types': 0.36.6
-      '@unocss/reset': 0.45.30
-      '@vueuse/core': 9.4.0(vue@3.3.4)
-      '@vueuse/head': 0.9.8(vue@3.3.4)
-      '@vueuse/math': 9.4.0(vue@3.3.4)
-      '@vueuse/motion': 2.0.0-beta.24(vue@3.3.4)
-      codemirror: 5.65.9
-      defu: 6.1.0
-      drauu: 0.3.2
-      file-saver: 2.0.5
-      js-base64: 3.7.2
-      js-yaml: 4.1.0
-      katex: 0.16.3
-      mermaid: 9.1.7
-      monaco-editor: 0.33.0
-      nanoid: 4.0.0
-      prettier: 2.7.1
-      recordrtc: 5.6.2
-      resolve: 1.22.1
-      unocss: 0.45.30(vite@2.9.16)
-      vite-plugin-windicss: 1.8.8(vite@2.9.16)
-      vue: 3.3.4
-      vue-router: 4.1.6(vue@3.3.4)
-      vue-starport: 0.3.0
-      windicss: 3.5.6
-    transitivePeerDependencies:
-      - '@unocss/webpack'
-      - '@vue/composition-api'
-      - rollup
-      - supports-color
-      - vite
-    dev: false
-
   /@slidev/client@0.36.6(vite@3.2.1):
     resolution: {integrity: sha512-pd2zLNChXHAmweHhzDDSLyQA6Cr+szMEz/Tu1d+wn3FQ8mIclvNykXjPk5Z20Eyae98IadNyY8xIOxjB9RbGWg==}
     engines: {node: '>=14.0.0'}
@@ -2851,7 +2812,7 @@ packages:
       '@slidev/client': '*'
       shiki: '*'
     dependencies:
-      '@slidev/client': 0.36.6(vite@2.9.16)
+      '@slidev/client': 0.36.6(vite@3.2.1)
       '@slidev/types': 0.13.13
       codemirror-theme-vars: 0.1.1
       prism-theme-vars: 0.2.4
@@ -3126,17 +3087,6 @@ packages:
       hookable: 5.5.3
       unhead: 1.4.1
       vue: 3.3.4
-
-  /@unocss/astro@0.45.30(vite@2.9.16):
-    resolution: {integrity: sha512-eF5FxSasaKveOAIFVJlHD0dlvKDmL7oBCFQihr6XR8RhbkkMI8mO0lJB0i6QK3PtJY7F6ceCSMe+bAht6Q067w==}
-    dependencies:
-      '@unocss/core': 0.45.30
-      '@unocss/reset': 0.45.30
-      '@unocss/vite': 0.45.30(vite@2.9.16)
-    transitivePeerDependencies:
-      - rollup
-      - vite
-    dev: false
 
   /@unocss/astro@0.45.30(vite@3.2.1):
     resolution: {integrity: sha512-eF5FxSasaKveOAIFVJlHD0dlvKDmL7oBCFQihr6XR8RhbkkMI8mO0lJB0i6QK3PtJY7F6ceCSMe+bAht6Q067w==}
@@ -3433,24 +3383,6 @@ packages:
     resolution: {integrity: sha512-Tc3/xFGweEzCZEV08Ftfl910u5yUj/GPwkvm6IapjWL0JogkjR7HJZa8uyfSWhfhhsLdLs7AqRc9qkyucIhYDA==}
     dependencies:
       '@unocss/core': 0.55.4
-
-  /@unocss/vite@0.45.30(vite@2.9.16):
-    resolution: {integrity: sha512-4yx3W/SicS1ovpYdwbRQEGSdLZKxM76T5R0bGR9VRp6WcMoExY3Ph50LRCq1PIHT2L/GARSpJ/gGOW4hJ9lMYg==}
-    peerDependencies:
-      vite: ^2.9.0 || ^3.0.0-0
-    dependencies:
-      '@ampproject/remapping': 2.2.1
-      '@rollup/pluginutils': 5.0.4
-      '@unocss/config': 0.45.30
-      '@unocss/core': 0.45.30
-      '@unocss/inspector': 0.45.30
-      '@unocss/scope': 0.45.30
-      '@unocss/transformer-directives': 0.45.30
-      magic-string: 0.26.7
-      vite: 2.9.16
-    transitivePeerDependencies:
-      - rollup
-    dev: false
 
   /@unocss/vite@0.45.30(vite@3.2.1):
     resolution: {integrity: sha512-4yx3W/SicS1ovpYdwbRQEGSdLZKxM76T5R0bGR9VRp6WcMoExY3Ph50LRCq1PIHT2L/GARSpJ/gGOW4hJ9lMYg==}
@@ -7895,13 +7827,13 @@ packages:
     dependencies:
       is-glob: 4.0.3
 
-  /glob@10.3.4:
-    resolution: {integrity: sha512-6LFElP3A+i/Q8XQKEvZjkEWEOTgAIALR9AO2rwT8bgPhDd1anmqDJDZ6lLddI4ehxxxR1S5RIqKe1uapMQfYaQ==}
+  /glob@10.3.10:
+    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
       foreground-child: 3.1.1
-      jackspeak: 2.3.1
+      jackspeak: 2.3.5
       minimatch: 9.0.3
       minipass: 7.0.3
       path-scurry: 1.10.1
@@ -8761,8 +8693,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /jackspeak@2.3.1:
-    resolution: {integrity: sha512-4iSY3Bh1Htv+kLhiiZunUhQ+OYXIn0ze3ulq8JeWrFKmhPAJSySV2+kdtRh2pGcCeF0s6oR8Oc+pYZynJj4t8A==}
+  /jackspeak@2.3.5:
+    resolution: {integrity: sha512-Ratx+B8WeXLAtRJn26hrhY8S1+Jz6pxPMrkrdkgb/NstTNiqMhX0/oFVu5wX+g5n6JlEu2LPsDJmY8nRP4+alw==}
     engines: {node: '>=14'}
     dependencies:
       '@isaacs/cliui': 8.0.2
@@ -9785,19 +9717,11 @@ packages:
     dependencies:
       brace-expansion: 1.1.11
 
-  /minimatch@5.1.0:
-    resolution: {integrity: sha512-9TPBGGak4nHfGZsPBohm9AWg6NoT7QTCehS3BIJABslyZbzxfV78QM2Y6+i741OPZIafFAaiiEMh5OyIrJPgtg==}
-    engines: {node: '>=10'}
-    dependencies:
-      brace-expansion: 2.0.1
-    dev: false
-
   /minimatch@5.1.6:
     resolution: {integrity: sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==}
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
-    dev: true
 
   /minimatch@9.0.3:
     resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
@@ -11416,12 +11340,12 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf@5.0.1:
-    resolution: {integrity: sha512-OfFZdwtd3lZ+XZzYP/6gTACubwFcHdLRqS9UX3UwpU2dnGQYkPFISRwvM3w9IiB2w7bW5qGo/uAwE4SmXXSKvg==}
+  /rimraf@5.0.5:
+    resolution: {integrity: sha512-CqDakW+hMe/Bz202FPEymy68P+G50RfMQK+Qo5YUqc9SPipvbGjCGKd0RSKEelbsfQuw3g5NZDSrlZZAJurH1A==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      glob: 10.3.4
+      glob: 10.3.10
     dev: true
 
   /robust-predicates@3.0.2:
@@ -12650,38 +12574,6 @@ packages:
       normalize-path: 2.1.1
     dev: true
 
-  /unocss@0.45.30(vite@2.9.16):
-    resolution: {integrity: sha512-6ODOL358gIS7IYdGmVc+DfsW881VZQPXACz5WySdSYcVgQnJvuvEVmvuXn670zN2K8TIEIP/22julybHtwDZ4Q==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      '@unocss/webpack': 0.45.30
-    peerDependenciesMeta:
-      '@unocss/webpack':
-        optional: true
-    dependencies:
-      '@unocss/astro': 0.45.30(vite@2.9.16)
-      '@unocss/cli': 0.45.30
-      '@unocss/core': 0.45.30
-      '@unocss/preset-attributify': 0.45.30
-      '@unocss/preset-icons': 0.45.30
-      '@unocss/preset-mini': 0.45.30
-      '@unocss/preset-tagify': 0.45.30
-      '@unocss/preset-typography': 0.45.30
-      '@unocss/preset-uno': 0.45.30
-      '@unocss/preset-web-fonts': 0.45.30
-      '@unocss/preset-wind': 0.45.30
-      '@unocss/reset': 0.45.30
-      '@unocss/transformer-attributify-jsx': 0.45.30
-      '@unocss/transformer-compile-class': 0.45.30
-      '@unocss/transformer-directives': 0.45.30
-      '@unocss/transformer-variant-group': 0.45.30
-      '@unocss/vite': 0.45.30(vite@2.9.16)
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-      - vite
-    dev: false
-
   /unocss@0.45.30(vite@3.2.1):
     resolution: {integrity: sha512-6ODOL358gIS7IYdGmVc+DfsW881VZQPXACz5WySdSYcVgQnJvuvEVmvuXn670zN2K8TIEIP/22julybHtwDZ4Q==}
     engines: {node: '>=14'}
@@ -12836,7 +12728,7 @@ packages:
       fast-glob: 3.2.12
       local-pkg: 0.4.2
       magic-string: 0.26.7
-      minimatch: 5.1.0
+      minimatch: 5.1.6
       resolve: 1.22.1
       unplugin: 0.6.3(vite@2.9.12)
       vue: 3.2.41
@@ -12865,7 +12757,7 @@ packages:
       fast-glob: 3.2.12
       local-pkg: 0.4.2
       magic-string: 0.26.7
-      minimatch: 5.1.0
+      minimatch: 5.1.6
       resolve: 1.22.1
       unplugin: 0.10.2
       vue: 3.2.41
@@ -13364,20 +13256,6 @@ packages:
       debug: 4.3.4(supports-color@9.4.0)
       kolorist: 1.6.0
       vite: 2.9.12
-      windicss: 3.5.6
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
-  /vite-plugin-windicss@1.8.8(vite@2.9.16):
-    resolution: {integrity: sha512-iyu+ZX0NmhNEUaLPv7xtC+EFRBpWMmw0nhd9a9upayfuNG/thwslKiQKmRB7U/dG0k/2oWLvPDvN/B9i7oRgSA==}
-    peerDependencies:
-      vite: ^2.0.1 || ^3.0.0
-    dependencies:
-      '@windicss/plugin-utils': 1.8.8
-      debug: 4.3.4(supports-color@9.4.0)
-      kolorist: 1.6.0
-      vite: 2.9.16
       windicss: 3.5.6
     transitivePeerDependencies:
       - supports-color
