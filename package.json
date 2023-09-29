@@ -6,7 +6,7 @@
     "serve": "netlify dev"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.111",
+    "@iconify/json": "^2.2.122",
     "@slidev/cli": "0.43.0-beta.3",
     "@slidev/theme-default": "^0.21.2",
     "netlify-cli": "^16.2.0",
