@@ -10,7 +10,7 @@
     "@slidev/cli": "0.43.0-beta.3",
     "@slidev/theme-default": "^0.21.2",
     "netlify-cli": "^16.2.0",
-    "playwright-chromium": "^1.37.1",
+    "playwright-chromium": "^1.39.0",
     "pnpm": "^8.7.1",
     "rimraf": "^5.0.1",
     "vue": "^3.3.0"
