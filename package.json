@@ -13,6 +13,6 @@
     "playwright-chromium": "^1.37.1",
     "pnpm": "^8.7.1",
     "rimraf": "^5.0.1",
-    "vue": "^3.3.0"
+    "vue": "^3.3.8"
   }
 }
