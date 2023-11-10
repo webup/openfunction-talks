@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@iconify/json':
-        specifier: ^2.2.111
-        version: 2.2.111
+        specifier: ^2.2.140
+        version: 2.2.140
       '@slidev/cli':
         specifier: 0.43.0-beta.3
         version: 0.43.0-beta.3(@types/node@20.5.7)(playwright-chromium@1.37.1)(postcss@8.4.29)
@@ -1031,8 +1031,8 @@ packages:
     resolution: {integrity: sha512-9Y41Tk9s3LDt4WI20XySNhNX6qTJ/WOBeE3O2iyoV9LJ6gFEDjp0uTPzfRU9NUx7D6VkvQ/htJEuRe9LmyMqUA==}
     dev: false
 
-  /@iconify/json@2.2.111:
-    resolution: {integrity: sha512-/LpDXn355r1TJIooRiRjoEHpfmvmDBfWQFtP04bo9xO05NOfQpZwadCfXZw4d3eIF0SfIlPiLMHt3UfKOCRIMw==}
+  /@iconify/json@2.2.140:
+    resolution: {integrity: sha512-pEDLyUe39vZy15C0LT3UrnTzAWq1xkZ+F8+u9XfcHzqC7W9IwsocVMzWBGtXUn+pCmLpksfwHlzVycbbz7eMvw==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.1
