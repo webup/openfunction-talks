@@ -13,7 +13,7 @@ importers:
         version: 2.2.111
       '@slidev/cli':
         specifier: 0.43.0-beta.3
-        version: 0.43.0-beta.3(@types/node@20.5.7)(playwright-chromium@1.37.1)(postcss@8.4.29)
+        version: 0.43.0-beta.3(@types/node@20.5.7)(playwright-chromium@1.40.0)(postcss@8.4.29)
       '@slidev/theme-default':
         specifier: ^0.21.2
         version: 0.21.2
@@ -21,8 +21,8 @@ importers:
         specifier: ^16.2.0
         version: 16.2.0(@types/node@20.5.7)
       playwright-chromium:
-        specifier: ^1.37.1
-        version: 1.37.1
+        specifier: ^1.40.0
+        version: 1.40.0
       pnpm:
         specifier: ^8.7.1
         version: 8.7.1
@@ -37,19 +37,19 @@ importers:
     dependencies:
       '@slidev/cli':
         specifier: ^0.33.0
-        version: 0.33.0(playwright-chromium@1.37.1)(vue-template-compiler@2.7.14)
+        version: 0.33.0(playwright-chromium@1.40.0)(vue-template-compiler@2.7.14)
       '@slidev/theme-default':
         specifier: '*'
         version: 0.21.2
       slidev-theme-light-icons:
         specifier: ^1.0.2
-        version: 1.0.2(@slidev/client@0.36.6)(playwright-chromium@1.37.1)(shiki@0.14.4)(vue-template-compiler@2.7.14)
+        version: 1.0.2(@slidev/client@0.36.6)(playwright-chromium@1.40.0)(shiki@0.14.4)(vue-template-compiler@2.7.14)
 
   202-node-async/src:
     dependencies:
       '@slidev/cli':
         specifier: ^0.33.0
-        version: 0.33.0(playwright-chromium@1.37.1)(vue-template-compiler@2.7.14)
+        version: 0.33.0(playwright-chromium@1.40.0)(vue-template-compiler@2.7.14)
       '@slidev/theme-default':
         specifier: '*'
         version: 0.21.2
@@ -61,7 +61,7 @@ importers:
     dependencies:
       '@slidev/cli':
         specifier: ^0.36.6
-        version: 0.36.6(playwright-chromium@1.37.1)(postcss@8.4.29)
+        version: 0.36.6(playwright-chromium@1.40.0)(postcss@8.4.29)
       '@slidev/theme-default':
         specifier: '*'
         version: 0.21.2
@@ -73,7 +73,7 @@ importers:
     dependencies:
       '@slidev/cli':
         specifier: 0.43.0-beta.3
-        version: 0.43.0-beta.3(@types/node@20.5.7)(playwright-chromium@1.37.1)(postcss@8.4.29)
+        version: 0.43.0-beta.3(@types/node@20.5.7)(playwright-chromium@1.40.0)(postcss@8.4.29)
       '@slidev/theme-default':
         specifier: '*'
         version: 0.21.2
@@ -85,7 +85,7 @@ importers:
     dependencies:
       '@slidev/cli':
         specifier: ^0.33.0
-        version: 0.33.0(playwright-chromium@1.37.1)(vue-template-compiler@2.7.14)
+        version: 0.33.0(playwright-chromium@1.40.0)(vue-template-compiler@2.7.14)
       '@slidev/theme-default':
         specifier: '*'
         version: 0.21.2
@@ -2338,7 +2338,7 @@ packages:
       escape-string-regexp: 5.0.0
     dev: true
 
-  /@slidev/cli@0.33.0(playwright-chromium@1.37.1)(vue-template-compiler@2.7.14):
+  /@slidev/cli@0.33.0(playwright-chromium@1.40.0)(vue-template-compiler@2.7.14):
     resolution: {integrity: sha512-Ej11pPmfya3xH8aPY+1Lyl1JSy/avQoAOyLB3Bv8nJ5MsdW+fcUj/u3OksaMbESPDly3A0RWU2Tda4NtfFVecg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -2376,7 +2376,7 @@ packages:
       nanoid: 3.3.4
       open: 8.4.0
       plantuml-encoder: 1.4.0
-      playwright-chromium: 1.37.1
+      playwright-chromium: 1.40.0
       prismjs: 1.29.0
       prompts: 2.4.2
       resolve: 1.22.1
@@ -2409,7 +2409,7 @@ packages:
       - webpack
     dev: false
 
-  /@slidev/cli@0.36.6(playwright-chromium@1.37.1)(postcss@8.4.29):
+  /@slidev/cli@0.36.6(playwright-chromium@1.40.0)(postcss@8.4.29):
     resolution: {integrity: sha512-UDI5YGrcaEOyfIhfHKZtc8JMggQk7YCVwB1SYaMQMg8CbOYTuI0mHdGBzvb/PfH4oqbmaMHm6E5D4lB5ppjVVg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -2447,7 +2447,7 @@ packages:
       nanoid: 4.0.0
       open: 8.4.0
       plantuml-encoder: 1.4.0
-      playwright-chromium: 1.37.1
+      playwright-chromium: 1.40.0
       postcss-nested: 6.0.0(postcss@8.4.29)
       prismjs: 1.29.0
       prompts: 2.4.2
@@ -2485,7 +2485,7 @@ packages:
       - vue-template-es2015-compiler
     dev: false
 
-  /@slidev/cli@0.43.0-beta.3(@types/node@20.5.7)(playwright-chromium@1.37.1)(postcss@8.4.29):
+  /@slidev/cli@0.43.0-beta.3(@types/node@20.5.7)(playwright-chromium@1.40.0)(postcss@8.4.29):
     resolution: {integrity: sha512-k4i3BZSZa0S/eKvEV+PZCzAI7Ar3haOrba2cAAmOEKXtxjl8wtB7AScNPpWLHluOWJ1nLHQ4stVkeD8ySEaa7g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
@@ -2532,7 +2532,7 @@ packages:
       open: 8.4.2
       pdf-lib: 1.17.1
       plantuml-encoder: 1.4.0
-      playwright-chromium: 1.37.1
+      playwright-chromium: 1.40.0
       postcss-nested: 6.0.1(postcss@8.4.29)
       prismjs: 1.29.0
       prompts: 2.4.2
@@ -2575,7 +2575,7 @@ packages:
       - vue-template-compiler
       - vue-template-es2015-compiler
 
-  /@slidev/cli@0.7.4(playwright-chromium@1.37.1)(vue-template-compiler@2.7.14):
+  /@slidev/cli@0.7.4(playwright-chromium@1.40.0)(vue-template-compiler@2.7.14):
     resolution: {integrity: sha512-psUwQw6XLn8ftfUMKY0e9eOKMXcZ2pYsz0JQdcWmYU6wx14GylArT+gj3MMAomdbTVyl7PgfWXqhrfG7ECTDxA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -2605,7 +2605,7 @@ packages:
       markdown-it-link-attributes: 3.0.0
       monaco-editor: 0.23.0
       pdf-lib: 1.17.1
-      playwright-chromium: 1.37.1
+      playwright-chromium: 1.40.0
       prismjs: 1.29.0
       prompts: 2.4.2
       shiki: 0.9.15
@@ -10792,16 +10792,16 @@ packages:
   /plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
 
-  /playwright-chromium@1.37.1:
-    resolution: {integrity: sha512-UMbu6AtNe3vb36VzEoHVTnsBKaPMuHJhzZm5zpBM2DeLN8A/+gTQRQyfSZzuktSSDU22acMKGvc8WU6NIjBFmQ==}
+  /playwright-chromium@1.40.0:
+    resolution: {integrity: sha512-LEObqtviC8ik5QM9dHcx3YYGxTl2bBrUnePHibHX/a7KVbkvt1P13b9oYHylytKBh8C84pg+D3yfs/t5MgGDpg==}
     engines: {node: '>=16'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      playwright-core: 1.37.1
+      playwright-core: 1.40.0
 
-  /playwright-core@1.37.1:
-    resolution: {integrity: sha512-17EuQxlSIYCmEMwzMqusJ2ztDgJePjrbttaefgdsiqeLWidjYz9BxXaTaZWxH1J95SHGk6tjE+dwgWILJoUZfA==}
+  /playwright-core@1.40.0:
+    resolution: {integrity: sha512-fvKewVJpGeca8t0ipM56jkVSU6Eo0RmFvQ/MaCQNDYm+sdvKkMBBWTE1FdeMqIdumRaXXjZChWHvIzCGM/tA/Q==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -11741,11 +11741,11 @@ packages:
       is-fullwidth-code-point: 4.0.0
     dev: true
 
-  /slidev-theme-light-icons@1.0.2(@slidev/client@0.36.6)(playwright-chromium@1.37.1)(shiki@0.14.4)(vue-template-compiler@2.7.14):
+  /slidev-theme-light-icons@1.0.2(@slidev/client@0.36.6)(playwright-chromium@1.40.0)(shiki@0.14.4)(vue-template-compiler@2.7.14):
     resolution: {integrity: sha512-rcXi/ugBjVVqL9gMDZGjQuxnVXGLMcrpRsM4MHeccAa0KXldheBq4s5VfiuzpUFxBz938dJGfTyAt0HVr0ViBg==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@slidev/cli': 0.7.4(playwright-chromium@1.37.1)(vue-template-compiler@2.7.14)
+      '@slidev/cli': 0.7.4(playwright-chromium@1.40.0)(vue-template-compiler@2.7.14)
       '@slidev/theme-default': 0.7.9(@slidev/client@0.36.6)(shiki@0.14.4)
       light-icons: 1.0.10
     transitivePeerDependencies:
